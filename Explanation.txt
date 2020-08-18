@@ -1,0 +1,69 @@
+We have a wooden plank of the length n units. Some ants are walking on the plank, each ant moves with speed 1 unit per second. 
+Some of the ants move to the left, the other move to the right.
+When two ants moving in two different directions meet at some point, they change their directions and continue moving again. 
+Assume changing directions doesn't take any additional time.
+When an ant reaches one end of the plank at a time t, it falls out of the plank imediately.
+Given an integer n and two integer arrays left and right, the positions of the ants moving to the left and the right. 
+Return the moment when the last ant(s) fall out of the plank.
+For example, consider this problem,
+units=4, leftarray=[4,3], rightarray=[0,1
+the answer is 4.
+
+Input Description:
+First line contains, units,a and b. a is the size of left array and b is the size of right array.(1< units,a,b <1000).
+Second line contains, a integers as left array.
+Third line contains, b integers as rigth array.
+
+Output Description:
+Print the moment when the last ant(s) fall out of the plank.
+
+Sample Input:
+4 2 2
+4 3
+0 1
+
+Sample Output:
+4
+
+Explanation:
+Consider the given explanation in question.
+
+Sample Input:
+5 3 4
+2 3 4
+6 7 8 9
+
+Sample Output:
+4
+
+Sample Input:
+2 4 3
+0 1 2 5
+3 7 8
+
+Sample Output:
+5
+
+Sample Input:
+1 2 1
+0 1
+5
+
+Sample Output:
+1
+
+Sample Input:
+3 2 1
+0 7
+8
+
+Sample Output:
+7
+
+Sample Input:
+5 4 6
+0 2 4 6
+7 8 9 2 1
+
+Sample Output:
+6
